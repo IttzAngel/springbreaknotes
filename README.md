@@ -1,0 +1,29 @@
+- CHAPTER 7
+- if multiple classes can fit into the same category with an is-A relationship and have same methods you can create a parent class in which the other classes can inherit methods using the extends keyword
+- subclass extends superclass
+- inheritance can help to avoid duplicating code, use it for common methods
+- override methods in individual subclasses for each subclass to have its own behavior (for example every animal has a makeNoise() method that exists in the parent class, but every animal makes a different noise)
+- hierarchy is extremely important (for example dog and wolf is-A canine, canine is-A animal, therefore dog and wolf classes will extend canine class, and canine class will extend animal class)
+- is-A relationship works in one direction, circle is-A shape, but shape is-A circle does not make any sense
+- four access levels: private default protected public
+- public members are inherited, private members are not inherited
+- inheritance makes our life easier using common methods instead of having to constantly duplicate our code into every single class
+- three steps of object declaration and assignment = 1. declare a reference variable 2. create an object 3. link the object and the reference. example: Dog myDog = new Dog();
+- HOWEVER, with polymorphism, the reference and the object can be different. example: Animal myDog = new Dog();
+- when overriding, arguments must be the same and return types must be compatible and the method cant be less accessible
+- when overloading a method, the return types can be different, you cant change ONLY the return type, and you can vary the access levels in any direction
+
+- CHAPTER 8
+- if you mark a class as abstract, the compiler will stop any code anywhere from creating an instance of that type
+- an abstract class means that nobody can ever make a new instance of the class
+- if a class is not abstract, it is automatically concrete
+- use abstract if there can be different types of this class/thing, and concrete if it should not change (example: cat is concrete, feline is abstract)
+- abstract methods have no body
+- you must implement all abstract methods
+- you cannot have an abstract method in a non abstract class, but you can have both abstract and non abstract methods in an abstract class
+- every class extends class Object
+- polymorphism means "many forms"
+- you can only call a method on an object if the class of the reference variable has the method
+- avoid the deadly diamond of death, aka multiple inheritance (even though java does not allow this to happen)
+- classes from different inheritacne tress can implement the same interface, for example, dog and cat are different trees, however they can both implement a pet interface
+- make a class that doesnt extend anything if it does not pass the is-A test, make a subclass when you want to make a more specific version and need to override or add behaviors, make an abstract class when you want to define a template for a group of subclasses, and when you want to guarantee that nobody can make objects of that type, and an interface when you want to define a role that other classes can play, no matter which inheritance tree the class is in
