@@ -60,3 +60,11 @@
 - final can also be used for non static variables
 - final simply means that the value can not be changed
 - autoboxing does the conversion from primitive to wrapper object automatically
+- autoboxing works almost everywhere
+- wrappers have static utility methods
+- there are very many ways to format a number in java, use a static String.format() method
+- format string has its own little syntax that can be used
+- make sure to use the format specifier correctly in the right order
+- for a time stamp of now use date, for everything else use calendar
+- to get an object that extends calendar use getInstance() method
+- be careful when using static imports, they are very useful but can be confusing
